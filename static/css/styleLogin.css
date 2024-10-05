@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(../FundoTrabalho.jpg);
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100%;
+    font-size: 16px;
+}
+
+.container {
+    position: relative;
+    width: 1200px;
+    max-width: 100%;
+    min-height: 660px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.cadastro,
+.login {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+}
+
+.cadastro {
+    width: 50%;
+    opacity: 0;
+    z-index: 1;
+}
+
+.login {
+    width: 50%;
+    z-index: 2;
+}
+
+form {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px; /* Ajustado para espaçamento melhor */
+    height: 100%;
+    text-align: center;
+}
+
+h1 {
+    font-weight: bold;
+    margin: 0;
+    font-size: 3em;
+}
+
+p {
+    font-size: 1.2em;
+    font-weight: 100;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    margin: 15px 0 20px;
+}
+
+.form-group {
+    display: flex;
+    justify-content: flex-start; /* Mantém os elementos alinhados à esquerda */
+    align-items: center; /* Alinhamento vertical ao centro */
+    margin: 10px 0;
+    width: 100%; /* O grupo ocupa 100% da largura */
+    max-width: 600px; /* Limita a largura máxima */
+}
+
+label {
+    width: 150px; /* Largura fixa para os rótulos */
+    margin-right: 15px; /* Espaço entre o rótulo e o campo */
+    text-align: right; /* Alinhamento do texto à direita */
+}
+
+input {
+    background: #eee;
+    padding: 12px 15px;
+    margin: 8px 0; /* Margem para os campos de entrada */
+    flex: 1; /* O campo de entrada expande conforme necessário */
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    max-width: 400px; /* Define uma largura máxima */
+}
+
+button {
+    color: #fff;
+    background: #ff4b2b;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 55px;
+    margin: 20px;
+    border-radius: 20px;
+    border: 1px solid #ff4b2b;
+    outline: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.90);
+}
+
+.container.right-panel-active .login {
+    transform: translateX(100%);
+}
+
+.container.right-panel-active .cadastro {
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+}
+
+.overlay-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: transform 0.6s ease-in-out;
+}
+
+.container.right-panel-active .overlay-container {
+    transform: translateX(-100%);
+}
+
+.overlay {
+    position: relative;
+    color: #fff;
+    background: linear-gradient(to right, #95321eb6, #89480c);
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+}
+
+.container.right-panel-active .overlay {
+    transform: translateX(50%);
+}
+
+.overlay-esquerda,
+.overlay-direita {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+}
+
+.overlay-esquerda {
+    transform: translateX(-20%);
+}
+
+.overlay-direita {
+    right: 0;
+    transform: translateX(0);
+}
+
+.container.right-panel-active .overlay-esquerda {
+    transform: translateX(0);
+}
+
+.container.right-panel-active .overlay-direita {
+    transform: translateX(20%);
+}
+
+img {
+    max-width: 350px;
+    max-height: 200px;
+}
+
+/* Estilo para os selects */
+select {
+    background: #eee; /* Cor de fundo semelhante aos inputs */
+    padding: 12px 15px; /* Espaçamento interno */
+    margin: 8px 0; /* Margem superior e inferior */
+    border-radius: 5px; /* Borda arredondada */
+    border: none; /* Remove a borda padrão */
+    outline: none; /* Remove o contorno padrão */
+    flex: 1; /* Permite que o select expanda */
+    max-width: 400px; /* Largura máxima */
+    font-size: 16px; /* Tamanho da fonte */
+    color: #333; /* Cor do texto */
+    appearance: none; /* Remove a aparência padrão do sistema */
+    -webkit-appearance: none; /* Remove a aparência padrão no Safari */
+    -moz-appearance: none; /* Remove a aparência padrão no Firefox */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><polygon fill="%23333" points="0,0 20,0 10,10"/></svg>'); /* Adiciona uma seta personalizada */
+    background-repeat: no-repeat; /* Não repete a imagem de fundo */
+    background-position: right 10px center; /* Posiciona a seta */
+    background-size: 12px; /* Tamanho da seta */
+}
+
+/* Para o estado de foco do select */
+select:focus {
+    background: #fff; /* Muda o fundo ao focar */
+    border: 1px solid #ff4b2b; /* Adiciona uma borda colorida ao foco */
+}
+
+/* Para desabilitar a seta padrão no select */
+.select-wrapper {
+    position: relative; /* Posicionamento relativo para a seta personalizada */
+}
+
+/* Remove a seta padrão do select no Firefox */
+select::-ms-expand {
+    display: none; /* Remove a seta padrão em navegadores baseados em Trident/Edge */
+}
+

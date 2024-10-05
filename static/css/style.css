@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+.hero {
+    background-image: url('/static/FundoTrabalho.jpg');
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.overlay {
+    padding: 20px;
+}
+
+.overlay p {
+    font-size: 1em;
+}
+
+.overlay h1 {
+    font-size: 3em;
+}
+
+.button {
+    background-color: #ff5733;
+    color: white;
+    padding: 30px 60px;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-top: 0px;
+    display: inline-block;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.diferenciais {
+    background-color: #e2e2e2;
+    position: relative;
+    z-index: 1;
+}
+
+.diferenciais-container {
+    background-color: #ff5733;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.diferencial-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.diferencial-item {
+    flex: 1 1 150px;
+    max-width: 200px;
+    text-align: center;
+    margin: 15px;
+}
+
+.diferencial-item img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.diferencial-item span {
+    padding: 10px 20px;
+    background-color: #ff5733;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.planos {
+    padding: 40px;
+    background-color: white;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.planos h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #ff5733;
+}
+
+.planos-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.plano {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    flex: 1;
+    min-width: 200px;
+    max-width: 250px;
+}
+
+.plano h3 {
+    background-color: #ff5733;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1.5em;
+    margin: -20px -20px 20px -20px;
+}
+
+.plano p {
+    margin: 5px 0;
+    font-weight: bold;
+    color: #ff5733;
+    font-size: 1.2em;
+}
+
+.plano p::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: #ff5733;
+    margin: 10px auto;
+    width: 80%;
+}
+
+.about {
+    padding: 40px;
+    background-color: white;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content p {
+    margin: 5px 0;
+}
+
+.instagram-icon {
+    width: 30px;
+    height: auto;
+}
+
+.preco-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.preco-antigo {
+    text-decoration: line-through;
+    font-size: 0.9em;
+    color: #999;
+    margin-right: 10px;
+}
+
+.preco-novo {
+    font-size: 1.5em;
+    color: #ff5733;
+    font-weight: bold;
+}
+/* Seção de Serviços */
+.servicos {
+    padding: 200px;
+    background-color: #f8f8f8;
+}
+
+.servicos h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Container para duas colunas */
+.servicos-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Cada coluna de serviços */
+.coluna-servicos {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.servicos-lista {
+    list-style: none;
+    padding: 0;
+}
+
+.servico-item {
+    display: flex;
+    justify-content: space-between; /* Nome à esquerda e preço à direita */
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.2em;
+}
+
+.servico-item:last-child {
+    border-bottom: none;
+}
+
+.servico-nome {
+    text-align: left;
+    font-weight: bold;
+    color: #333;
+}
+
+.servico-preco {
+    text-align: right;
+    font-weight: bold;
+    color: #d9534f;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .servicos-container {
+        flex-direction: column; /* Colocar as colunas uma abaixo da outra em telas pequenas */
+    }
+}

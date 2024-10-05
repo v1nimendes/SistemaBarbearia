@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styleLogin.css') }}">
+    <title>Costelinha Barber Shop</title>
+</head>
+
+<body>
+    <img src="static/costelinhapng.png">
+
+    <div class="container" id="main">
+        <div class="cadastro">
+            <form method="POST">
+                <h1>Cadastro</h1>
+                <p>Informe as informações para cadastro</p>
+                
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email-cadastro">E-mail:</label>
+                    <input type="email" name="email" id="email-cadastro" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="senha-cadastro">Senha:</label>
+                    <input type="password" name="senha" id="senha-cadastro" required>
+                </div>
+                
+                <button name="Cadastrar">Cadastrar</button>
+            </form>
+        </div>
+    
+        <div class="login">
+            <form method="POST">
+                <h1>Login</h1>
+                <p>Informe seus dados de login</p>
+                
+                <div class="form-group">
+                    <label for="email-login">E-mail:</label>
+                    <input type="email" name="email" id="email-login" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="senha-login">Senha:</label>
+                    <input type="password" name="senha" id="senha-login" required>
+                </div>
+                
+                <a href="formulario_redefinicao.php">Esqueceu sua senha?</a>
+                <button name="Entrar">Login</button>
+                <a href="{{ url_for('index') }}"> Voltar </a>
+            </form>
+        </div>
+
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-esquerda">
+                    <h1>Bem Vindo de Volta</h1>
+                    <p>Para entrar informe seus dados de login</p>
+                    <button id="login"> Login </button>
+                </div>
+                <div class="overlay-direita">
+                    <h1>Olá Amigo!</h1>
+                    <p>Realize seu cadastro para utilizar nossos serviços</p>
+                    <button id="cadastro"> Cadastro </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Código para fazer a troca de telas no formulário
+        const botaoCadastro = document.getElementById('cadastro');
+        const botaoLogin = document.getElementById('login');
+        const main = document.getElementById('main');
+
+        botaoCadastro.addEventListener('click', () => {
+            main.classList.add("right-panel-active");
+        });
+
+        botaoLogin.addEventListener('click', () => {
+            main.classList.remove("right-panel-active");
+        });
+    </script>
+
+</body>
+
+</html>
