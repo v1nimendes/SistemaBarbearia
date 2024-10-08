@@ -17,13 +17,14 @@ body {
 
 .container {
     position: relative;
-    width: 1200px;
-    max-width: 100%;
+    width: 90%; /* Ajustado para uma largura percentual */
+    max-width: 1200px;
     min-height: 660px;
-    background: #fff;
+    background: #D8C4A3; /* Bege Claro */
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    padding: 20px; /* Adicione preenchimento para evitar que o texto encoste nas bordas */
 }
 
 .cadastro,
@@ -52,7 +53,7 @@ form {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 20px; /* Ajustado para espaçamento melhor */
+    padding: 30px; /* Aumentado para mais espaço */
     height: 100%;
     text-align: center;
 }
@@ -60,7 +61,10 @@ form {
 h1 {
     font-weight: bold;
     margin: 0;
-    font-size: 3em;
+    font-size: 2.5em; /* Reduzido para dar mais espaço */
+    color: #4A6054; /* Verde Escuro */
+    line-height: 1.2; /* Aumenta a altura da linha para melhor espaçamento */
+    padding: 20px; /* Adiciona um pouco de preenchimento */
 }
 
 p {
@@ -69,6 +73,7 @@ p {
     line-height: 20px;
     letter-spacing: 0.5px;
     margin: 15px 0 20px;
+    color: #354F39; /* Verde Musgo */
 }
 
 .form-group {
@@ -84,6 +89,7 @@ label {
     width: 150px; /* Largura fixa para os rótulos */
     margin-right: 15px; /* Espaço entre o rótulo e o campo */
     text-align: right; /* Alinhamento do texto à direita */
+    color: #8B5E3C; /* Marrom Madeira */
 }
 
 input {
@@ -92,20 +98,20 @@ input {
     margin: 8px 0; /* Margem para os campos de entrada */
     flex: 1; /* O campo de entrada expande conforme necessário */
     border-radius: 5px;
-    border: none;
+    border: 1px solid #B0764A; /* Marrom Cobre */
     outline: none;
     max-width: 400px; /* Define uma largura máxima */
 }
 
 button {
     color: #fff;
-    background: #ff4b2b;
+    background: #B0764A; /* Marrom Cobre */
     font-size: 12px;
     font-weight: bold;
     padding: 12px 55px;
     margin: 20px;
     border-radius: 20px;
-    border: 1px solid #ff4b2b;
+    border: none; /* Remove a borda */
     outline: none;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -144,7 +150,7 @@ button:active {
 .overlay {
     position: relative;
     color: #fff;
-    background: linear-gradient(to right, #95321eb6, #89480c);
+    background: linear-gradient(to right, #4A6054, #B0764A); /* Gradiente com Verde Escuro e Marrom Cobre */
     left: -100%;
     height: 100%;
     width: 200%;
@@ -200,7 +206,7 @@ select {
     padding: 12px 15px; /* Espaçamento interno */
     margin: 8px 0; /* Margem superior e inferior */
     border-radius: 5px; /* Borda arredondada */
-    border: none; /* Remove a borda padrão */
+    border: 1px solid #B0764A; /* Marrom Cobre */
     outline: none; /* Remove o contorno padrão */
     flex: 1; /* Permite que o select expanda */
     max-width: 400px; /* Largura máxima */
@@ -217,17 +223,5 @@ select {
 
 /* Para o estado de foco do select */
 select:focus {
-    background: #fff; /* Muda o fundo ao focar */
-    border: 1px solid #ff4b2b; /* Adiciona uma borda colorida ao foco */
+    border-color: #4A6054; /* Verde Escuro ao focar */
 }
-
-/* Para desabilitar a seta padrão no select */
-.select-wrapper {
-    position: relative; /* Posicionamento relativo para a seta personalizada */
-}
-
-/* Remove a seta padrão do select no Firefox */
-select::-ms-expand {
-    display: none; /* Remove a seta padrão em navegadores baseados em Trident/Edge */
-}
-

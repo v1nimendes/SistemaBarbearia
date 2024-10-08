@@ -3,17 +3,17 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: white;
+    background-color: #f8f8f8; /* Fundo claro */
 }
 
 .hero {
-    background-image: url('/static/FundoTrabalho.jpg');
+    background-image: url('/static/background1.png');
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: white;
+    color: #D8C4A3; /* Cor clara para contraste */
     position: relative;
 }
 
@@ -25,30 +25,39 @@ body {
     font-size: 1em;
 }
 
+/* Destacar as mensagens */
 .overlay h1 {
     font-size: 3em;
+    color: #4A6054; /* Verde escuro */
+}
+
+.message {
+    font-size: 1.5em; /* Aumentar o tamanho da fonte */
+    font-weight: bold; /* Negrito */
+    color: #B0764A; /* Marrom cobre */
+    margin: 20px 0; /* Espaçamento */
 }
 
 .button {
-    background-color: #ff5733;
+    background-color: #B0764A; /* Marrom cobre */
     color: white;
     padding: 30px 60px;
     text-decoration: none;
     border-radius: 10px;
-    margin-top: 0px;
+    margin-top: 20px; /* Aumentar o espaçamento do botão */
     display: inline-block;
     font-size: 1.5em;
     font-weight: bold;
 }
 
 .diferenciais {
-    background-color: #e2e2e2;
+    background-color: #D8C4A3; /* Bege claro */
     position: relative;
     z-index: 1;
 }
 
 .diferenciais-container {
-    background-color: #ff5733;
+    background-color: #4A6054; /* Verde escuro */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     position: absolute;
@@ -85,7 +94,7 @@ body {
 
 .diferencial-item span {
     padding: 10px 20px;
-    background-color: #ff5733;
+    background-color: #B0764A; /* Marrom cobre */
     color: white;
     border-radius: 5px;
     font-size: 1.2em;
@@ -93,8 +102,8 @@ body {
 }
 
 .planos {
-    padding: 40px;
-    background-color: white;
+    padding: 20px;
+    background-color: #F8F8F8; /* Manter fundo claro */
     text-align: center;
     margin-top: 100px;
 }
@@ -102,7 +111,7 @@ body {
 .planos h2 {
     margin-bottom: 20px;
     font-size: 2em;
-    color: #ff5733;
+    color: #B0764A; /* Marrom cobre */
 }
 
 .planos-container {
@@ -112,7 +121,7 @@ body {
 }
 
 .plano {
-    background-color: white;
+    background-color: white; /* Manter branco para contraste */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -122,7 +131,7 @@ body {
 }
 
 .plano h3 {
-    background-color: #ff5733;
+    background-color: #B0764A; /* Marrom cobre */
     color: white;
     padding: 15px;
     border-radius: 5px;
@@ -133,7 +142,7 @@ body {
 .plano p {
     margin: 5px 0;
     font-weight: bold;
-    color: #ff5733;
+    color: #4A6054; /* Verde escuro */
     font-size: 1.2em;
 }
 
@@ -141,21 +150,21 @@ body {
     content: "";
     display: block;
     height: 1px;
-    background-color: #ff5733;
+    background-color: #B0764A; /* Marrom cobre */
     margin: 10px auto;
     width: 80%;
 }
 
 .about {
     padding: 40px;
-    background-color: white;
-    text-align: center;
+    background-color: white; /* Manter branco para contraste */
+    text-align: center; /* Alinhamento central */
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0 auto; /* Centraliza horizontalmente */
 }
 
 .footer {
-    background-color: #333;
+    background-color: #333; /* Manter escuro */
     color: white;
     padding: 20px;
     text-align: center;
@@ -186,20 +195,21 @@ body {
 
 .preco-novo {
     font-size: 1.5em;
-    color: #ff5733;
+    color: #B0764A; /* Marrom cobre */
     font-weight: bold;
 }
+
 /* Seção de Serviços */
 .servicos {
     padding: 200px;
-    background-color: #f8f8f8;
+    background-color: #F8F8F8; /* Manter fundo claro */
 }
 
 .servicos h2 {
     text-align: center;
     font-size: 2.5em;
     margin-bottom: 30px;
-    color: #333;
+    color: #4A6054; /* Verde escuro */
     font-weight: bold;
 }
 
@@ -238,13 +248,13 @@ body {
 .servico-nome {
     text-align: left;
     font-weight: bold;
-    color: #333;
+    color: #4A6054; /* Verde escuro */
 }
 
 .servico-preco {
     text-align: right;
     font-weight: bold;
-    color: #d9534f;
+    color: #B0764A; /* Marrom cobre */
 }
 
 /* Responsividade */
