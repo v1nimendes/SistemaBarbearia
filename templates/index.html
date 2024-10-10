@@ -1,51 +1,54 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style2.css') }}">
     <title>Costelinha Barber Shop</title>
 </head>
-<body>
-    <div class="hero">
-        <div class="overlay">
-            <p>Agende seu horário com os melhores profissionais!</p>
-            <a href="{{ url_for('login') }}" class="button">Faça seu Agendamento</a>
-            <p>Estamos abertos das 09:00 às 20:00 de segunda a sexta e das 09:00 às 16:00 aos sábados</p>
-        </div>
-    </div>
 
-    <!-- Container de Diferenciais -->
-    <section class="diferenciais">
-        <div class="diferenciais-container">
-            <div class="diferencial-container">
-                <div class="diferencial-item">
-                    <img src="{{ url_for('static', filename='kidszone.png') }}" alt="Espaço Kids" class="icon">
-                    <span>Espaço Kids</span>
+<body>
+    <header>
+        <div class="wrapHead">
+            <div id="brand">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="scroll">Home</a></li>
+                    <li><a href="#about" class="scroll">About</a></li>
+                    <li><a href="#contact" class="scroll">Contact</a></li>
+                    <li><a href="#pricing" class="scroll">Pricing</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="container">
+            <div class="row">
+                <div class="column-66">
+                    <h1 class="xlarge-font">Bem-vindo à Urban Barber Shop!</h1>
+                    <br> <br><br> <br><br> <br>
+                    <p class="large-font">Aqui, oferecemos mais do que um corte, oferecemos estilo, confiança e uma experiência única. Venha nos visitar e sinta a diferença no atendimento e no cuidado com cada detalhe.</p>
+                    <br> <br><br> 
+                    <button class="button">Agendar</button>
+                    <br> <br>
+                    <p>Estamos abertos das 09:00 às 20:00 de segunda a sexta e das 09:00 às 16:00 aos sábados.</p>
                 </div>
-                <div class="diferencial-item">
-                    <img src="{{ url_for('static', filename='presente.png') }}" alt="Planos Mensais" class="icon">
-                    <span>Planos Mensais</span>
-                </div>
-                <div class="diferencial-item">
-                    <img src="{{ url_for('static', filename='estacionamento.png') }}" alt="Estacionamento" class="icon">
-                    <span>Estacionamento</span>
-                </div>
-                <div class="diferencial-item">
-                    <img src="{{ url_for('static', filename='jogo.png') }}" alt="Game e Sinuca" class="icon">
-                    <span>Game e Sinuca</span>
-                </div>
-                <div class="diferencial-item">
-                    <img src="{{ url_for('static', filename='noivo.png') }}" alt="Dia do Noivo" class="icon">
-                    <span>Dia do Noivo</span>
+                <div class="column-33">
+                    <br> <br><br> <br><br> <br>
+                    <div class="image-container">
+                        <!-- Coloque a imagem desejada aqui -->
+                        <img src="../static/b2.jpg" alt="Imagem da barbearia">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Seção de Serviços -->
-    <section class="servicos">
-        <h2>Nossos Serviços</h2>
+    <section class="servicos" id="about">
+        <h2>Serviços</h2>
         <div class="servicos-container">
             <div class="coluna-servicos">
                 <ul class="servicos-lista">
@@ -70,10 +73,6 @@
                         <span class="servico-preco">R$ 55,00</span>
                     </li>
                     <li class="servico-item">
-                        <span class="servico-nome">Barba Retoque</span>
-                        <span class="servico-preco">R$ 35,00</span>
-                    </li>
-                    <li class="servico-item">
                         <span class="servico-nome">Corte Tesoura + Barba</span>
                         <span class="servico-preco">R$ 130,00</span>
                     </li>
@@ -81,19 +80,15 @@
                         <span class="servico-nome">Corte Máquina + Barba</span>
                         <span class="servico-preco">R$ 120,00</span>
                     </li>
-                </ul>
-            </div>
-
-            <div class="coluna-servicos">
-                <ul class="servicos-lista">
-                    <li class="servico-item">
-                        <span class="servico-nome">Consultoria Visagismo</span>
-                        <span class="servico-preco">Informações com a Recepcionista</span>
-                    </li>
                     <li class="servico-item">
                         <span class="servico-nome">Sobrancelha com Navalha</span>
                         <span class="servico-preco">R$ 25,00</span>
                     </li>
+                </ul>
+            </div>
+            <div class="coluna-servicos">
+                <ul class="servicos-lista">
+                    
                     <li class="servico-item">
                         <span class="servico-nome">Higienização de Ouvido e Nariz</span>
                         <span class="servico-preco">R$ 35,00</span>
@@ -118,81 +113,46 @@
                         <span class="servico-nome">Lavar e Finalizar o Cabelo</span>
                         <span class="servico-preco">R$ 20,00</span>
                     </li>
-                    <li class="servico-item">
-                        <span class="servico-nome">SELAGEM a partir</span>
-                        <span class="servico-preco">R$ 120,00</span>
-                    </li>
                 </ul>
             </div>
         </div>
     </section>
-
-    <!-- Container de Planos -->
-    <section class="planos">
-        <h2>Nossos Planos</h2>
-        <div class="planos-container">
-            <div class="plano">
-                <h3>VIP BASIC</h3>
-                <p class="preco-container">
-                    <span class="preco-antigo">R$ 50,00</span>
-                    <span class="preco-novo">R$ 40,00</span>
-                </p>
-                <p>4 - Serviços</p>
-                <p>1 - Sobrancelhas</p>
-                <p>1 - Hidratação</p>
-                <p>Acumula pontos</p>
-                <p>5% de Desconto em toda a linha de produtos.</p>
-                <p>Fique o mês todo no estilo</p>
-            </div>
-            <div class="plano">
-                <h3>VIP PLUS</h3>
-                <p class="preco-container">
-                    <span class="preco-antigo">R$ 80,00</span>
-                    <span class="preco-novo">R$ 60,00</span>
-                </p>
-                <p>6 - Serviços</p>
-                <p>2 - Sobrancelhas</p>
-                <p>1 - Hidratação</p>
-                <p>Acumula pontos</p>
-                <p>10% de Desconto em toda a linha de produtos.</p>
-                <p>Fique o mês todo no estilo</p>
-            </div>
-            <div class="plano">
-                <h3>VIP PREMIUM</h3>
-                <p class="preco-container">
-                    <span class="preco-antigo">R$ 120,00</span>
-                    <span class="preco-novo">R$ 100,00</span>
-                </p>
-                <p>8 - Serviços</p>
-                <p>2 - Sobrancelhas</p>
-                <p>1 - Hidratação</p>
-                <p>1 - Máscara negra</p>
-                <p>Acumula pontos</p>
-                <p>15% de Desconto em toda a linha de produtos.</p>
-                <p>Fique o mês todo no estilo</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="about">
-        <h2>Sobre a Barbearia</h2>
-        <p>A Barbearia Exemplo é o lugar perfeito para você que deseja um corte de cabelo estiloso e um atendimento de qualidade. Nossa equipe é composta por profissionais experientes, prontos para atender suas necessidades. Temos um ambiente acolhedor e uma variedade de serviços, desde cortes clássicos até os mais modernos.</p>
-        <p>Localizada no coração da cidade, oferecemos um espaço para relaxar enquanto cuida da sua aparência. Venha nos visitar e descubra o que podemos fazer por você!</p>
-    </section>
-
-    <footer class="footer">
-        <div class="footer-content">
-            <p>Endereço: Rua Exemplo, 123 - Centro, Cidade - Estado</p>
-            <p>Contato: (11) 1234-5678 | email@barbeariaexemplo.com</p>
-            <a href="https://www.instagram.com/seu_instagram" target="_blank">
-                <img src="{{ url_for('static', filename='img/instagram.png') }}" alt="Instagram" class="instagram-icon">
-            </a>
-            <br>
-            <br>
-            <br>
-            <p>&copy; 2024 Barbearia Exemplo. Todos os direitos reservados.</p>
-        </div>
-    </footer>
     
+    <section id="contact">
+        <h2>Contact</h2>
+    </section>
+    <section id="pricing">
+        <h2>Pricing</h2>
+    </section>
 </body>
+
+<script>
+    $(document).ready(function(){
+        var docEl = $(document),
+            headerEl = $('header'),
+            headerWrapEl = $('.wrapHead'),
+            navEl = $('nav'),
+            linkScroll = $('.scroll');
+
+        docEl.on('scroll', function(){
+            if ( docEl.scrollTop() > 60 ){
+                headerEl.addClass('fixed-to-top');
+                headerWrapEl.addClass('fixed-to-top');
+                navEl.addClass('fixed-to-top');
+            }
+            else {
+                headerEl.removeClass('fixed-to-top');
+                headerWrapEl.removeClass('fixed-to-top');
+                navEl.removeClass('fixed-to-top');
+            }
+        });
+
+        linkScroll.click(function(e){
+            e.preventDefault();
+            $('body, html').animate({
+                scrollTop: $(this.hash).offset().top
+            }, 500);
+        });
+    });
+</script>
 </html>

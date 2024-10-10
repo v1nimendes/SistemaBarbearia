@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+p {
+    color: #fffdfd;
+}
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.wrapHead {
+    width: 90%;
+    margin: 0 auto;
+    transition: all ease-in-out 0.5s;
+}
+
+.wrapHead.fixed-to-top {
+    width: 96%;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 0;
+    z-index: 1;
+    transition: all ease-in-out 0.5s;
+}
+
+header:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+header.fixed-to-top {
+    background: rgba(38, 50, 56, 1);
+}
+
+#brand {
+    color: #ccc;
+    float: left;
+}
+
+#brand h1 {
+    letter-spacing: 10px;
+    text-shadow: 2px 2px 5px #111;
+}
+
+nav {
+    float: right;
+    margin-top: 10px;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 4px;
+}
+
+nav li a {
+    padding: 10px 0;
+    text-decoration: none;
+    color: #e1e1e1;
+    transition: all ease-in-out 0.5s;
+}
+
+nav li a:hover {
+    color: #bbb;
+}
+
+.container {
+    padding: 64px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column-66 {
+    float: left;
+    width: 66.66666%;
+    padding: 20px;
+}
+
+.column-33 {
+    float: left;
+    width: 33.33333%;
+    padding: 20px;
+}
+
+.large-font {
+    color: #fffdfd;
+    font-size: 48px;
+}
+
+.xlarge-font {
+    color: #fffdfd;
+    font-size: 64px;
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 20px 40px; /* Aumentando o padding */
+    font-size: 18px; /* Aumentando o tamanho da fonte */
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.363);
+    margin-left: 450px; /* Ajustando a margem para a esquerda */
+}
+
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+.image-container {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    z-index: 0;
+}
+
+section h2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: left;
+    text-transform: capitalize;
+    text-shadow: 10px 10px 3px rgba(255, 254, 254, 0.2);
+    color: #fffdfd;
+}
+
+#home {
+    background: linear-gradient(to right, #1C1C1C, #2B3A55, #5C6973, #A3A3A3, #688EA7);
+
+
+
+
+}
+
+
+#about {
+    background: #EF9A9A;
+}
+
+#pricing {
+    background: #FFE082;
+}
+
+#contact {
+    background: #C5E1A5;
+}
+
+/* Seção de Serviços */
+.servicos {
+    padding: 100px 20px; /* Ajustar padding */
+    background-color: #F8F8F8; /* Fundo claro */
+}
+
+.servicos h2 {
+    text-align: center; /* Centraliza o título */
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #4A6054; /* Verde escuro */
+    font-weight: bold;
+}
+
+/* Container para duas colunas */
+.servicos-container {
+    display: flex;
+    justify-content: center; /* Centraliza as colunas */
+    max-width: 1200px; /* Limite de largura */
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+/* Cada coluna de serviços */
+.coluna-servicos {
+    flex: 1; /* Colunas com largura igual */
+    padding: 0 20px; /* Padding horizontal */
+}
+
+/* Lista de serviços */
+.servicos-lista {
+    list-style: none; /* Remove marcadores */
+    padding: 0; /* Remove padding */
+    text-align: center; /* Centraliza o texto da lista */
+}
+
+.servico-item {
+    display: flex;
+    justify-content: space-between; /* Nome à esquerda e preço à direita */
+    align-items: center; /* Alinha itens verticalmente */
+    padding: 10px 0; /* Espaçamento entre itens */
+    border-bottom: 1px solid #ddd; /* Linha inferior */
+    font-size: 1.2em; /* Tamanho da fonte */
+}
+
+.servico-item:last-child {
+    border-bottom: none; /* Remove linha do último item */
+}
+
+.servico-nome {
+    text-align: left; /* Alinha o texto à esquerda */
+    font-weight: bold; /* Destaca o nome do serviço */
+    color: #4A6054; /* Verde escuro */
+}
+
+.servico-preco {
+    text-align: right; /* Alinha o preço à direita */
+    font-weight: bold; /* Destaca o preço */
+    color: #D8C4A3; /* Cor alterada para D8C4A3 */
+}
+
+
