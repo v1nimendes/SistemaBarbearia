@@ -1,0 +1,478 @@
+/*Formatação Home*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+p {
+    color: #fffdfd;
+}
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.wrapHead {
+    width: 90%;
+    margin: 0 auto;
+    transition: all ease-in-out 0.5s;
+}
+
+.wrapHead.fixed-to-top {
+    width: 96%;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 0;
+    z-index: 1;
+    transition: all ease-in-out 0.5s;
+}
+
+header:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+header.fixed-to-top {
+    background: rgba(38, 50, 56, 1);
+}
+
+nav {
+    float: right;
+    margin-top: 10px;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 4px;
+}
+
+nav li a {
+    padding: 10px 0;
+    text-decoration: none;
+    color: #e1e1e1;
+    transition: all ease-in-out 0.5s;
+}
+
+nav li a:hover {
+    color: #bbb;
+}
+
+.container {
+    justify-content: center; 
+    align-items: center;
+    flex-wrap: wrap; 
+    padding: 20px;
+    height: 100vh; 
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column-66 {
+    float: left;
+    width: 66.66666%;
+    padding: 20px;
+}
+
+.column-33 {
+    float: left;
+    width: 33.33333%;
+    padding: 20px;
+}
+
+.large-font {
+    color: #fffdfd;    font-size: 30px;
+}
+
+.xlarge-font {
+    color: #fffdfd;
+    font-size: 48px;
+    padding: 50px;
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 20px 40px; /* Aumentando o padding */
+    font-size: 18px; /* Aumentando o tamanho da fonte */
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.363);
+    margin-left: 450px; /* Ajustando a margem para a esquerda */
+}
+
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+.image-container {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+#home {
+    background: linear-gradient(to right, #1C1C1C, #2B3A55, #5C6973, #A3A3A3, #688EA7);
+}
+
+/*Formatação Serviços*/
+
+#servicos {
+    background: white;
+    justify-content: center; 
+    align-items: center;
+    flex-wrap: wrap; 
+    padding: 20px;
+    height: 100vh; 
+}
+.servicos {
+    padding: 100px 20px; 
+    background-color: #F8F8F8;
+}
+
+.servicos h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #2B3A55;
+    font-weight: bold;
+}
+
+
+.servicos-container {
+    display: flex;
+    justify-content: left;
+    max-width: 1000px; 
+    margin: 0 auto; 
+    padding: 64px;
+}
+
+
+.coluna-servicos {
+    flex: 1; 
+    padding: 0 20px;
+}
+
+
+.servicos-lista {
+    list-style: none; 
+    padding: 0; 
+    text-align: center; 
+}
+
+.servico-item {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px 0; 
+    border-bottom: 1px solid #ddd;
+    font-size: 1.2em; 
+}
+
+.servico-item:last-child {
+    border-bottom: none; 
+}
+
+.servico-nome {
+    text-align: left;
+    font-weight: bold;
+    color: #2B3A55;
+}
+
+.servico-preco {
+    text-align: right;
+    font-weight: bold;
+    color: #D8C4A3;
+}
+
+/*Formatação Planos*/
+
+#planos {
+    background: linear-gradient(to right, #1C1C1C, #2B3A55, #5C6973, #A3A3A3, #688EA7);
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-wrap: wrap; 
+    padding: 20px;
+    height: 100vh; 
+}
+
+.planos {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  
+  .planos:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+  }
+  
+  .planos .header {
+    background-color: #111;
+    color: white;
+    font-size: 25px;
+  }
+  
+  .planos li {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .planos .grey {
+    background-color: #eee;
+    font-size: 20px;
+  }
+  .columns {
+    float: left;
+    width: 33.3%;
+    background-color: #fff; /* Cor de fundo das colunas */
+    padding: 0px; /* Espaçamento interno */
+    border-radius: 10px; /* Borda arredondada, se desejar */
+    flex-basis: 30%; /* Define a largura de cada coluna */
+    margin: 5px;
+  }
+
+  #planos-h2 {
+    font-size: 20px;
+    text-align: center;
+    color: white;
+  }
+
+  /*Formatação Sobre*/
+
+  #sobre {
+    text-align: center; /* Centraliza o texto */
+    margin: 50px 0; /* Ajusta o espaçamento da section */
+}
+
+#sobre h2 {
+    font-size: 2.5rem; /* Tamanho do título */
+    margin-bottom: 20px;
+    color: black; /* Cor do título em preto */
+}
+
+#sobre p {
+    font-size: 1.1rem; /* Tamanho do texto */
+    line-height: 1.6; /* Ajusta o espaçamento entre linhas */
+    margin-bottom: 15px; /* Espaçamento entre os parágrafos */
+    color: black; /* Cor do texto em preto */
+}
+
+/* Se precisar centralizar os links também */
+#sobre a {
+    color: black; /* Ajusta a cor dos links para preto */
+    text-decoration: none;
+    display: block; /* Faz com que os links ocupem toda a largura disponível */
+    margin: 5px 0; /* Espaçamento entre os links */
+}
+
+#sobre a:hover {
+    text-decoration: underline; /* Efeito ao passar o mouse sobre os links */
+}
+
+/*Formatação Modal*/
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+
+
+.modal-container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto; /* Diminuído para ajustar a altura */
+  border: 1px solid #888;
+  width: 60%; /* Diminuído para ajustar a largura */
+  max-width: 400px; /* Limite máximo de largura */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+
+/* Estilo do botão de fechar */
+.close {
+  color: black; /* Cor do texto */
+  float: right; /* Alinha à direita */
+  font-size: 28px; /* Tamanho da fonte */
+  font-weight: bold; /* Negrito */
+}
+
+/* Estilo do contêiner */
+.container {
+  padding: 16px; /* Espaçamento interno */
+}
+
+/* Estilo dos botões de entrada */
+.input-button {
+  background-color: #5C6973; /* Cor de fundo */
+  border: none; /* Sem borda */
+  color: white; /* Cor do texto */
+  padding: 10px; /* Espaçamento interno */
+  text-align: left; /* Alinha texto à esquerda */
+  text-decoration: none; /* Sem sublinhado */
+  display: inline-block; /* Exibe como bloco inline */
+  margin: 8px 0; /* Margens */
+  cursor: pointer; /* Cursor de ponteiro */
+  border-radius: 4px; /* Cantos arredondados */
+  width: 100%; /* Largura total */
+}
+
+.input-button:hover {
+  background-color: #688EA7; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilo do botão de submit */
+button[type="submit"] {
+  background-color: #4CAF50; /* Verde para o botão de login */
+  color: white; /* Cor do texto */
+  padding: 10px; /* Espaçamento interno */
+  border: none; /* Sem borda */
+  border-radius: 4px; /* Cantos arredondados */
+  cursor: pointer; /* Cursor de ponteiro */
+  width: 100%; /* Largura total */
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilo dos links */
+.btn {
+  color: black; /* Cor do texto */
+  text-decoration: none; /* Sem sublinhado */
+  display: inline-block; /* Exibe como bloco inline */
+  margin: 8px 0; /* Margens */
+}
+
+.btn:hover {
+  text-decoration: underline; /* Sublinhado ao passar o mouse */
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .modal-content {
+      width: 90%; /* Largura ajustada para telas pequenas */
+  }
+}

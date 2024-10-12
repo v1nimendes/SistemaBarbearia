@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style2.css') }}">
+    <title>Urban Barber Shop</title>
+
+</head>
+<body>
+    <header>
+        <div class="wrapHead">
+            <nav>
+                <ul>
+                    <li><a href="#home" class="scroll">Home</a></li>
+                    <li><a href="#servicos" class="scroll">Serviços</a></li>
+                    <li><a href="#planos" class="scroll">Planos</a></li>
+                    <li><a href="#sobre" class="scroll">Sobre</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="container">
+            <div class="row">
+                <div class="column-66">
+                    <h1 class="xlarge-font">Bem-vindo à Urban Barber Shop!</h1>
+                    <br> <br><br> <br><br> <br>
+                    <p class="large-font">Aqui, oferecemos mais do que um corte, oferecemos estilo, confiança e uma experiência única. Venha nos visitar e sinta a diferença no atendimento e no cuidado com cada detalhe.</p>
+                    <br> <br><br>
+                    <button onclick="document.getElementById('loginModal').style.display='block'" style="width:auto;" class="button">Agendar</button>
+                    <br> <br>
+                    <p>Estamos abertos das 09:00 às 20:00 de segunda a sexta e das 09:00 às 16:00 aos sábados.</p>
+                </div>
+                <div class="column-33">
+                    <br> <br><br> <br><br> <br>
+                    <div class="image-container">
+                        <img src="../static/b2.jpg" alt="Imagem da barbearia">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="servicos" id="servicos">
+        <h2>Serviços</h2>
+        <div class="servicos-container">
+            <div class="coluna-servicos">
+                <ul class="servicos-lista">
+                    <li class="servico-item">
+                        <span class="servico-nome">Corte Tesoura</span>
+                        <span class="servico-preco">R$ 35,00</span>
+                    </li>
+                    <li class="servico-item">
+                        <span class="servico-nome">Corte Máquina</span>
+                        <span class="servico-preco">R$ 25,00</span>
+                    </li>
+                    <li class="servico-item">
+                        <span class="servico-nome">Barba</span>
+                        <span class="servico-preco">R$ 30,00</span>
+                    </li>
+                    <li class="servico-item">
+                        <span class="servico-nome">Corte Máquina + Barba</span>
+                        <span class="servico-preco">R$ 50,00</span>
+                    </li>
+                    <li class="servico-item">
+                        <span class="servico-nome">Bigode</span>
+                        <span class="servico-preco">R$ 10,00</span>
+                    </li>
+                    <li class="servico-item">
+                        <span class="servico-nome">Corte Tesoura + Barba</span>
+                        <span class="servico-preco">R$ 55,00</span>
+                    </li>
+                   
+                </ul>
+            </div>
+            <div class="coluna-servicos">
+                <ul class="servicos-lista">
+                    <li class="servico-item">
+                        <span class="servico-nome">Corte Máquina + Barba</span>
+                        <span class="servico-preco">R$ 45,00</span>
+                    </li>
+                    <li class="servico-item">
+                        <span class="servico-nome">Sobrancelha com Navalha</span>
+                        <span class="servico-preco">R$ 5,00</span>
+                    </li>
+                    <li class="servico-item">
+                        <span class="servico-nome">Corte + Pigmentação</span>
+                        <span class="servico-preco">R$ 50,00</span>
+                    </li>
+                    <li class="servico-item">
+                        <span class="servico-nome">Corte + Luzes</span>
+                        <span class="servico-preco">R$ 70,00</span>
+                    </li>
+                    <li class="servico-item">
+                        <span class="servico-nome">Luzes</span>
+                        <span class="servico-preco">R$ 100,00</span>
+                    </li>
+                    <li class="servico-item">
+                        <span class="servico-nome">Lavar e Finalizar o Cabelo</span>
+                        <span class="servico-preco">R$ 20,00</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="planos">
+        <h2 id="planos-h2">Planos</h2>
+        <div class="columns">
+            <ul class="planos">
+              <li class="header">Basic</li>
+              <li class="grey">R$ 100,00</li>
+              <li>2x Corte</li>
+              <li>2x Barba</li>
+              <li>1x Sobrancelha com Navalha</li>
+              <li>Ganha 1 Pigmentação de brinde</li>
+            </ul>
+          </div>
+          
+          <div class="columns">
+            <ul class="planos">
+              <li class="header" style="background: linear-gradient(to right, #1C1C1C, #2B3A55, #5C6973, #A3A3A3, #688EA7)">Plus</li>
+              <li class="grey">R$ 150,00 </li>
+              <li>4x Corte</li>
+              <li>2x Barba</li>
+              <li>2x Sobrancelha com Navalha</li>
+              <li>2x Pigmentação</li>
+            </ul>
+          </div>
+          
+          <div class="columns">
+            <ul class="planos">
+              <li class="header">Premium</li>
+              <li class="grey">R$ 230.00</li>
+              <li>4x Corte</li>
+              <li>4x Barba</li>
+              <li>4x Sobrancelha com Navalha</li>
+              <li>2X Lavar e Finalizar o Cabelo</li>
+            </ul>
+          </div>
+    </section>
+
+
+    <section id="sobre">
+        <h2>Sobre a Barbearia</h2>
+        <p>
+            A Barbearia Exemplo é o lugar perfeito para você que deseja um corte de cabelo estiloso e um atendimento de qualidade. Nossa equipe é composta por profissionais experientes, prontos para atender suas necessidades. Temos um ambiente acolhedor e uma variedade de serviços, desde cortes clássicos até os mais modernos.
+        </p>
+        <p>
+            Localizada no coração da cidade, oferecemos um espaço para relaxar enquanto cuida da sua aparência. Venha nos visitar e descubra o que podemos fazer por você!
+        </p>
+        <p><strong>Endereço:</strong> Rua Exemplo, 123 - Centro, Cidade - Estado</p>
+        <p><strong>Contato:</strong> (11) 1234-5678 | <a href="mailto:email@barbeariaexemplo.com">email@barbeariaexemplo.com</a></p>
+        <p>
+            <strong>Instagram:</strong> <a href="https://instagram.com">instagram.com/barbeariaexemplo</a>
+        </p>
+        <p>© 2024 Barbearia Exemplo. Todos os direitos reservados.</p>
+    </section>
+
+
+    
+    <div id="loginModal" class="modal">
+        <form class="modal-content animate">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('loginModal').style.display='none'" class="close" title="Close Modal">&times;</span>
+            </div>
+    
+            <div class="modal-container">
+                <label for="username"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="username" required>
+    
+                <label for="password"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="password" required>
+    
+                <button type="submit">Login</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+            </div>
+    
+            <div class="modal-container" style="background-color:#f1f1f1">
+                <button onclick="openSignupModal()" style="width:auto;">Sign Up</button> <!-- Modificado aqui -->
+                <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+        </form>
+    </div>
+    
+   
+
+    <div id="signupModal" class="modal">
+        <span onclick="document.getElementById('').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <form class="modal-content">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('signupModal').style.display='none'" class="close" title="Close Modal">&times;</span>
+            </div>
+            <div class="modal-container">
+                <h1>Sign Up</h1>
+                <p>Please fill in this form to create an account.</p>
+                <hr>
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <label for="psw-repeat"><b>Repeat Password</b></label>
+                <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+                <label>
+                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                </label>
+
+
+                <div class="clearfix">
+                    <button type="submit" class="signupbtn">Sign Up</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        // Função para abrir o modal de signup e fechar o de login
+        function openSignupModal() {
+            document.getElementById('loginModal').style.display = 'none'; // Fecha o modal de login
+            document.getElementById('signupModal').style.display = 'block'; // Abre o modal de signup
+        }
+    
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            if (event.target == document.getElementById('loginModal')) {
+                document.getElementById('loginModal').style.display = "none";
+            }
+            if (event.target == document.getElementById('signupModal')) {
+                document.getElementById('signupModal').style.display = "none";
+            }
+        }
+    
+        // Smooth scroll
+        $(document).ready(function () {
+            $('.scroll').click(function (e) {
+                e.preventDefault();
+                $('html, body').animate({
+                    scrollTop: $($(this).attr('href')).offset().top
+                }, 500);
+            });
+        });
+    </script>
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+</body>
+
+</html>
