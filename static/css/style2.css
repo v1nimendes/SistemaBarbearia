@@ -94,7 +94,8 @@ nav li a:hover {
 }
 
 .large-font {
-    color: #fffdfd;    font-size: 30px;
+    color: #fffdfd;    
+    font-size: 30px;
 }
 
 .xlarge-font {
@@ -106,11 +107,11 @@ nav li a:hover {
 .button {
     border: none;
     color: white;
-    padding: 20px 40px; /* Aumentando o padding */
-    font-size: 18px; /* Aumentando o tamanho da fonte */
+    padding: 20px 40px; 
+    font-size: 18px;
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.363);
-    margin-left: 450px; /* Ajustando a margem para a esquerda */
+    margin-left: 450px; 
 }
 
 img {
@@ -245,10 +246,10 @@ img {
   .columns {
     float: left;
     width: 33.3%;
-    background-color: #fff; /* Cor de fundo das colunas */
-    padding: 0px; /* Espaçamento interno */
-    border-radius: 10px; /* Borda arredondada, se desejar */
-    flex-basis: 30%; /* Define a largura de cada coluna */
+    background-color: #fff; 
+    padding: 0px; 
+    border-radius: 10px; 
+    flex-basis: 30%; 
     margin: 5px;
   }
 
@@ -261,33 +262,33 @@ img {
   /*Formatação Sobre*/
 
   #sobre {
-    text-align: center; /* Centraliza o texto */
-    margin: 50px 0; /* Ajusta o espaçamento da section */
+    text-align: center;
+    margin: 50px 0; 
 }
 
 #sobre h2 {
-    font-size: 2.5rem; /* Tamanho do título */
+    font-size: 2.5rem; 
     margin-bottom: 20px;
-    color: black; /* Cor do título em preto */
+    color: black; 
 }
 
 #sobre p {
-    font-size: 1.1rem; /* Tamanho do texto */
-    line-height: 1.6; /* Ajusta o espaçamento entre linhas */
-    margin-bottom: 15px; /* Espaçamento entre os parágrafos */
-    color: black; /* Cor do texto em preto */
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 15px; 
+    color: black;/
 }
 
-/* Se precisar centralizar os links também */
+
 #sobre a {
-    color: black; /* Ajusta a cor dos links para preto */
+    color: black;
     text-decoration: none;
-    display: block; /* Faz com que os links ocupem toda a largura disponível */
-    margin: 5px 0; /* Espaçamento entre os links */
+    display: block; 
+    margin: 5px 0; 
 }
 
 #sobre a:hover {
-    text-decoration: underline; /* Efeito ao passar o mouse sobre os links */
+    text-decoration: underline; 
 }
 
 /*Formatação Modal*/

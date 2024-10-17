@@ -60,7 +60,7 @@
                 </div>
                 
                 <button name="Entrar">Agendar</button>
-                <a href="includes/logout.php" class="logout-link">Sair</a>
+                <a href="{{ url_for('logout') }}" class="logout-link">Sair</a>
             </form>
         </div>
 
@@ -79,48 +79,6 @@
             </div>
         </div>
     </div>
-
-    <script>
-        document.getElementById("data").addEventListener("change", function() {
-            const dataSelecionada = new Date(this.value);
-            const diaDaSemana = dataSelecionada.getDay();
-            const horaSelect = document.getElementById("hora");
-            horaSelect.innerHTML = "<option value=''>Selecione uma hora</option>";
-
-            if (diaDaSemana !== 0 && diaDaSemana !== 6) {
-                horaSelect.removeAttribute("disabled");
-                for (let hora = 8; hora <= 18; hora++) {
-                    for (let minuto = 0; minuto < 60; minuto += 60) {
-                        const horaFormatada = `${hora.toString().padStart(2, "0")}:${minuto.toString().padStart(2, "0")}`;
-                        const option = document.createElement("option");
-                        option.value = horaFormatada;
-                        option.textContent = horaFormatada;
-                        horaSelect.appendChild(option);
-                    }
-                }
-            } else {
-                horaSelect.setAttribute("disabled", "disabled");
-            }
-        });
-
-        // Código para fazer a troca de telas no formulário
-        const botaoCadastro = document.getElementById('horarios');
-        const botaoLogin = document.getElementById('agendar');
-        const main = document.getElementById('main');
-
-        function confirmDesmarcarHorario() {
-            return confirm("Você está prestes a desmarcar um agendamento, Tem certeza que quer continuar?");
-        }
-
-        botaoCadastro.addEventListener('click', () => {
-            main.classList.add("right-panel-active");
-        });
-
-        botaoLogin.addEventListener('click', () => {
-            main.classList.remove("right-panel-active");
-        });
-    </script>
-
 </body>
 
 </html>

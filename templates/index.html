@@ -163,36 +163,33 @@
 
     
     <div id="loginModal" class="modal">
-        <form class="modal-content animate">
+        <form class="modal-content animate" method="POST" action="{{ url_for('login') }}">
             <div class="imgcontainer">
                 <span onclick="document.getElementById('loginModal').style.display='none'" class="close" title="Close Modal">&times;</span>
             </div>
     
             <div class="modal-container">
-                <label for="username"><b>Username</b></label>
-                <input type="text" placeholder="Enter Username" name="username" required>
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Informe seu e-mail" name="email" required>
     
-                <label for="password"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="password" required>
+                <label for="senha"><b>Senha</b></label>
+                <input type="password" placeholder="Informe a senha" name="senha" required>
     
                 <button type="submit">Login</button>
                 <label>
-                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                    <input type="checkbox" checked="checked" name="remember">Lembre-me
                 </label>
             </div>
     
             <div class="modal-container" style="background-color:#f1f1f1">
-                <button onclick="openSignupModal()" style="width:auto;">Sign Up</button> <!-- Modificado aqui -->
+                <button onclick="openSignupModal()" style="width:auto;">Cadastre-se</button>
                 <span class="psw">Forgot <a href="#">password?</a></span>
             </div>
         </form>
     </div>
-    
-   
 
     <div id="signupModal" class="modal">
-        <span onclick="document.getElementById('').style.display='none'" class="close" title="Close Modal">&times;</span>
-        <form class="modal-content">
+        <form class="modal-content" method="POST" action="{{ url_for('register') }}">
             <div class="imgcontainer">
                 <span onclick="document.getElementById('signupModal').style.display='none'" class="close" title="Close Modal">&times;</span>
             </div>
@@ -200,28 +197,28 @@
                 <h1>Sign Up</h1>
                 <p>Please fill in this form to create an account.</p>
                 <hr>
+                <label for="nome"><b>Nome</b></label>
+                <input type="text" placeholder="Informe seu nome" name="nome" required>
+
                 <label for="email"><b>Email</b></label>
                 <input type="text" placeholder="Enter Email" name="email" required>
 
-                <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required>
+                <label for="senha"><b>Senha</b></label>
+                <input type="password" placeholder="Insira a senha" name="senha" required>
 
-                <label for="psw-repeat"><b>Repeat Password</b></label>
-                <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-
-                <label>
-                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-                </label>
-
+                <label for="senha"><b>Confirme a senha</b></label>
+                <input type="password" placeholder="Confirme a senha" name="senharepeat" required>
 
                 <div class="clearfix">
-                    <button type="submit" class="signupbtn">Sign Up</button>
+                    <button type="submit" class="signupbtn">Cadastre-se</button>
                 </div>
             </div>
         </form>
     </div>
 
     <script>
+
+        
         // Função para abrir o modal de signup e fechar o de login
         function openSignupModal() {
             document.getElementById('loginModal').style.display = 'none'; // Fecha o modal de login
